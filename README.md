@@ -25,10 +25,7 @@ This project checks the temperature in places like server rooms or cold storage.
 
     Copy all the required module files into the folder:
 
-        lcd.c, lcd.h
-        delay.c, delay.h
-        uart.c, uart.h
-        spi.c, spi_eeprom.c
+        lcd.c, lcd.h delay.c, delay.h uart.c, uart.h spi.c, spi_eeprom.c
 
 
 2. Individual Module Testing
