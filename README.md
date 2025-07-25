@@ -70,24 +70,13 @@ AT+CMGR=1	Read the first SMS
 AT+CMGS="+91xxxxxxxxxx"	Send SMS to given mobile number
 
 **📲 Working of the Final System**
-
-    Read Temperature:
-
-        Continuously read analog voltage from LM35 sensor.
-        Convert it to temperature using ADC.
-
-    Display on LCD:
-       Show current temperature and system messages on the LCD.
-
-    Threshold Check:
-        If the temperature exceeds the predefined limit:
-            -Trigger the buzzer
-            -Send an alert SMS to the user
-
-    Remote Control:
-        User can send SMS commands to change the threshold value remotely.
-        EEPROM can be used to store threshold for power-failure persistence.
-
+    
+    The LM35 sensor measures temperature and sends the value to the microcontroller via ADC.
+    The temperature is displayed on the LCD.
+    If the temperature goes beyond the set limit, the buzzer sounds and an SMS alert is sent.
+    Users can send an SMS to change the temperature threshold remotely.
+    The threshold can be stored in EEPROM so it's retained after a restart.
+    
 **Example SMS Commands**
 SMS Content	         Action
 1234M92xxxxxx70      30	Sets temperature threshold to 30°C
