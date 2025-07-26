@@ -101,5 +101,8 @@ Connect GSM module to PC and test using serial terminal:
 - Ensure correct UART baud rate (usually 9600 for GSM).
 - Store and verify EEPROM data using separate test code.
 
+**✅ Completion Indicator**
+- Once all components behave as expected and SMS commands function as designed, your project is complete.
 
+"All the best!"
 
